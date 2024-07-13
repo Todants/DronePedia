@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 1360px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1300px;
+  }
+}
+
+body{
+  background-color: #343a40;
+  color: #fdf8f4;
+}
+
+.card{
+  color: #c9c9c9;
+}
+
+.nav-link{
+  color: white;
+}
+.custom-col-5 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+[data-bs-theme=dark].carousel .carousel-caption{
+  color:#FAFAFA ;
+  
+}
+
+.custom-header {
+  background-color: #343a40; /* Цвет фона заголовка */
+  color: white; /* Цвет текста заголовка */
+  padding: 10px; /* Отступы в заголовке */
+}
+
+.custom-header .accordion-button {
+  background-color: #212121; /* Цвет фона кнопки расширения */
+  color: white; /* Цвет текста кнопки расширения */
+  border: none; /* Удаление границы кнопки */
+  padding: 8px 16px; /* Отступы в кнопке */
+  border-radius: 4px; /* Скругление углов кнопки */
+}
+
+.custom-header .accordion-button:hover {
+  background-color: #212121; /* Цвет фона кнопки расширения при наведении */
+}

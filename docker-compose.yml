@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: ./droneMarket
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./droneMarket:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+
+  frontend:
+    build:
+      context: ./frontend
+    volumes:
+      - ./frontend:/frontend
+    ports:
+      - "3000:3000"
+    command: npm start
+
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:

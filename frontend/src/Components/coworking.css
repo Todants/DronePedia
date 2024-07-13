@@ -1,0 +1,24 @@
+.product-details {
+    padding: 20px;
+  }
+  
+  .left-image img {
+    max-height: 80vh; /* Ограничиваем высоту изображения */
+    object-fit: cover; /* Масштабируем изображение, чтобы оно сохраняло пропорции */
+  }
+  
+  .right-images img {
+    max-height: 38vh; /* Ограничиваем высоту маленьких изображений */
+    object-fit: cover; /* Масштабируем изображение, чтобы оно сохраняло пропорции */
+  }
+  
+  .score {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
